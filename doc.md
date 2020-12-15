@@ -64,3 +64,13 @@ yarn add @loadable/component -D
 
 ```
 
+
+
+
+
+# 7、引入组件库antd
+
+```
+yarn add antd
+```
+
