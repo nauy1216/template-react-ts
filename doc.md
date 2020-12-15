@@ -46,15 +46,21 @@ npm start
 
 
 
+# 6、使用husky
+
 
 
 
 
 # 6、使用react-router
 
-## 1、安装
+## 1、安装依赖
 
 ```
-npm install react-router-dom
+yarn add react-router-dom react-router-config @types/react-router-dom @types/react-router-config -D
+
+// 按需加载组件
+yarn add @loadable/component -D
+
 ```
 
