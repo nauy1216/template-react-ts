@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 import { routes, basename } from './router';
 import { Button } from 'antd';
@@ -11,12 +11,15 @@ export default class App extends React.Component {
   };
   render() {
     return (
-      <React.Fragment>
-        <Button type="primary" onClick={this.goHome}>
-          Home
-        </Button>
-        <BrowserRouter basename={basename}>{renderRoutes(routes)}</BrowserRouter>
-      </React.Fragment>
+      <BrowserRouter basename={basename}>
+        <Link to="/home">
+          <Button type="primary">Home</Button>
+        </Link>
+        <Link to="/404">
+          <Button type="primary">404</Button>
+        </Link>
+        {renderRoutes(routes)}
+      </BrowserRouter>
     );
   }
 }
