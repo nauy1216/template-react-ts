@@ -22,7 +22,35 @@ npm start
 
 
 
-# 3、使用react-router
+# 3、安装eslint
+
+
+
+
+
+
+
+# 4、安装prettier
+
+
+
+
+
+
+
+
+
+# 5、vscode安装editorconfig插件
+
+
+
+
+
+
+
+
+
+# 6、使用react-router
 
 ## 1、安装
 
