@@ -18,6 +18,19 @@ export const routes = [
     name: 'home',
     title: 'HelloWorld'
   },
+  {
+    path: '/demo',
+    component: loadable(() => import('../pages/Demo')),
+    name: 'Demo',
+    title: 'Demo',
+    children: [
+      {
+        path: '/demo/1',
+        component: loadable(() => import('../pages/Demo/Test')),
+        exact: true
+      }
+    ]
+  },
   // 404 Not Found
   {
     path: '*',
