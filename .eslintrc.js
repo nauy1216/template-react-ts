@@ -34,6 +34,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
+    'no-debugger': 'warn',
     quotes: ['error', 'single'], // 强制使用单引号
     'no-unused-vars': 'error' // 不允许未定义的变量
   }
