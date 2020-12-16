@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 import { routes, basename } from './router';
-import { Button } from 'antd';
 import './App.css';
 
 export default class App extends React.Component {
@@ -12,12 +11,12 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter basename={basename}>
-        <Link to="/home">
+        {/* <Link to="/home">
           <Button type="primary">Home</Button>
         </Link>
         <Link to="/404">
           <Button type="primary">404</Button>
-        </Link>
+        </Link> */}
         {renderRoutes(routes)}
       </BrowserRouter>
     );

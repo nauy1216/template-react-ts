@@ -4,4 +4,13 @@
   },
   "editor.formatOnSave": true,
   "eslint.validate": ["typescript", "javascript", "javascriptreact", "typescriptreact", "html"],
+  /**
+  报错：
+  Specify JSX code generation: 'preserve', 'react', 'react-jsx', 'react-jsxdev' or'react-native'. Requires TypeScript version 2.2 or later.
+  原因：
+  vscode使用的typescript版本不支持。
+  解决办法：
+  选择当前项目使用的typescript版本为最新版本即可。
+  */
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
