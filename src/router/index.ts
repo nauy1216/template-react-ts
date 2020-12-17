@@ -28,6 +28,11 @@ export const routes = [
         path: '/demo/1',
         component: loadable(() => import('../pages/Demo/Test')),
         exact: true
+      },
+      {
+        path: '/demo/state',
+        component: loadable(() => import('../pages/Demo/State')),
+        exact: true
       }
     ]
   },

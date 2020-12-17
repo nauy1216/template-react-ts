@@ -1,5 +1,12 @@
 .page {
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
+  display: flex;
+  .sidebar {
+    width: 200px;
+    border-right: 1px solid #e0e0e0;
+  }
+  .content {
+    flex: 1 1 100%;
+  }
 }
