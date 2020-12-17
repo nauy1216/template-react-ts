@@ -9,6 +9,7 @@ module.exports = {
   },
   globals: {
     // "wx": "readonly",
+    NodeJS: 'readonly'
   },
   parser: '@typescript-eslint/parser',
   extends: [
@@ -26,6 +27,7 @@ module.exports = {
     }
   },
   parserOptions: {
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,

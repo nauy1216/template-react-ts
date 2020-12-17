@@ -33,6 +33,11 @@ export const routes = [
         path: '/demo/state',
         component: loadable(() => import('../pages/Demo/State')),
         exact: true
+      },
+      {
+        path: '/demo/lifecycle',
+        component: loadable(() => import('../pages/Demo/Lifecycle')),
+        exact: true
       }
     ]
   },

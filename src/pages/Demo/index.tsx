@@ -22,6 +22,14 @@ const Home: React.FC<any> = routes => {
           </Button>
         </div>
         <div>
+          <Button
+            onClick={() => {
+              history.push('/demo/lifecycle');
+            }}>
+            生命周期
+          </Button>
+        </div>
+        <div>
           <Button>Demo</Button>
         </div>
       </div>
