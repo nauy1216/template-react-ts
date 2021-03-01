@@ -38,6 +38,26 @@ export const routes = [
         path: '/demo/lifecycle',
         component: loadable(() => import('../pages/Demo/Lifecycle')),
         exact: true
+      },
+      {
+        path: '/demo/event',
+        component: loadable(() => import('../pages/Demo/Event')),
+        exact: true
+      },
+      {
+        path: '/demo/form',
+        component: loadable(() => import('../pages/Demo/Form')),
+        exact: true
+      },
+      {
+        path: '/demo/hook',
+        component: loadable(() => import('../pages/Demo/Hook')),
+        exact: true
+      },
+      {
+        path: '/demo/useEffect',
+        component: loadable(() => import('../pages/Demo/Hook/useEffect')),
+        exact: true
       }
     ]
   },
